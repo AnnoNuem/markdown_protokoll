@@ -1,0 +1,46 @@
+\documentclass[11pt, a4paper]{article}  
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{color}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{polynom}
+\usepackage{qtree}
+\usepackage{graphicx}
+\usepackage{tikz-qtree}
+\usepackage{tkz-graph}
+\usepackage{tikzpagenodes}
+\usepackage{wasysym}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage[ngerman]{babel}   
+\usepackage{xltxtra}
+\setmainfont{Quicksand-Regular.otf}[
+	Path = src/fonts/,
+	BoldFont = Quicksand-Bold.otf ,
+	ItalicFont     = Quicksand-Italic.otf,
+	BoldItalicFont = Quicksand-BoldItalic.otf]
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\setlength{\parindent}{0em} 
+\usepackage[pangram]{blindtext}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+   \node[inner sep=0pt] at ([xshift=-2.7cm, yshift=-0.8cm]current page text area.north east)
+              {\includegraphics[scale=.6]{src/figures/LogoGefuelltOhneRahmen}};
+\end{tikzpicture}
+{\LARGE Protokoll Plenum} \newline
+vom \today 
+\vspace{1cm}
+\tableofcontents
+
+\input{src/protokol.tex}
+
+\end{document}
+
