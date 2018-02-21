@@ -1,6 +1,8 @@
 # Anwesend
 Peter, Paul, Clara
 
+\tableofcontents
+
 # Top1 
 \Blindtext[1][3]
 
@@ -15,7 +17,6 @@ Peter, Paul, Clara
 1. **bla**
 \Blindtext[1][5]
 
-3. bli 
 
 4. blub 
 
