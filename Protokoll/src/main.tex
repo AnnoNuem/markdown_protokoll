@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper]{article}  
+\documentclass[10pt, a4paper]{article}  
 \usepackage{hyperref}
 \usepackage{lmodern}
 \usepackage{amsmath,amsfonts,amssymb}
@@ -19,28 +19,44 @@
 \usepackage{tikz}
 \usepackage[ngerman]{babel}   
 \usepackage{xltxtra}
-\setmainfont{Quicksand-Regular.otf}[
+\setsansfont{Quicksand-Regular.otf}[
 	Path = src/fonts/,
 	BoldFont = Quicksand-Bold.otf ,
 	ItalicFont     = Quicksand-Italic.otf,
 	BoldItalicFont = Quicksand-BoldItalic.otf]
+\setmainfont{OpenSans-Light.ttf}[
+	Path = src/fonts/,
+	BoldFont = OpenSans-Regular.ttf ,
+	ItalicFont     = OpenSans-LightItalic.ttf,
+    BoldItalicFont = OpenSans-Italic.ttf]
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \setlength{\parindent}{0em} 
 \usepackage[pangram]{blindtext}
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\sffamily\bfseries\Large}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\sffamily\bfseries\large}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\sffamily\bfseries\large}
+  {\thesubsubsection}{1em}{}
+
 \begin{document}
 \begin{tikzpicture}[remember picture,overlay]
-   \node[inner sep=0pt] at ([xshift=-2.7cm, yshift=-0.8cm]current page text area.north east)
+   \node[rotate=-10, inner sep=0pt] at ([xshift=-2.7cm, yshift=-0.8cm]current page text area.north east)
               {\includegraphics[scale=.6]{src/figures/LogoGefuelltOhneRahmen}};
 \end{tikzpicture}
-{\LARGE Protokoll Plenum} \newline
+\begin{flushleft}
+{\sffamily \LARGE Protokoll Plenum} 
+\end{flushleft}
 vom \today 
 \vspace{1cm}
-\tableofcontents
-
-\input{src/protokol.tex}
+\input{src/protokoll.tex}
 
 \end{document}
 

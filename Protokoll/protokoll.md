@@ -1,5 +1,12 @@
-# Anwesend
+\subsection*{Anwesend}
 Peter, Paul, Clara
+
+\subsection*{Protokoll}
+Axel
+
+\subsection*{Termine}
+
+\subsection*{Zusammenfassung}
 
 \tableofcontents
 
